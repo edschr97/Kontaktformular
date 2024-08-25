@@ -1,0 +1,87 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+input, select{
+    border: none;
+    width: 250px;
+    height: 25px;
+    border-bottom: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+
+textarea:focus, select, input:focus{
+    outline: none;
+}
+
+.input-field {
+    border-bottom: 2px;
+ 
+    width: fit-content;
+
+    margin: 0px;
+    padding: 0px;
+
+    margin-bottom: 25px;
+
+}
+
+.input-item {
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(33, 33, 33);
+}
+
+.input-headline {
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+
+select {
+ 
+    margin: 0px;
+    padding: 0px;
+}
+
+label, p{
+    
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 5px;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+#cv-input {
+    
+}
+
+
+.custom-input {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ff7b00;
+    color: white;
+   
+    font-size: 12px;
+   
+    text-align: center;
+
+    display: none;
+}

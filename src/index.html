@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 - Animations</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script.js"></script>
+    <div id="input" class="formular">
+        <div class="input-field">
+            <p class="input-headline" for="jobs-input">Job</p>
+            <p></p>
+            <select class="input-item" id="jobs-input" autocomplete="on">
+                <option class="it" value="jIT">Junior IT-Consultant</option>
+                <option class="design" value="cd">Creative Director</option>
+                <option class="design" value="uxui">Senior UX/UI Design</option>
+                <option class="techi" value="jFD">Junior Frontend Developer</option>
+                <option class="techi" value="sD">Senior Developer</option>
+                <option class="marketing" value="csP">Community Support Manager</option>
+                <option class="sales" value="sM">Sales Manager</option>
+                <option class="initativ" value="init">Initativbewerbung</option>
+            </select>  
+        </div>
+
+        <div class="input-field">
+            <p id="first-name-headline" class="input-headline">Firstname</p>
+            <input class="input-item" required="first-name-input" type="text" name="first_name" placeholder="Vorname"></input>
+        </div>
+
+        <div class="input-field">
+            <p id="email-headline" class="input-headline">E-Mail</p>
+            <input class="input-item" required="email-input" type="text" name="email_name" placeholder="E-Mail"></input>
+        </div>
+
+        <div class="input-field">
+            <p id="phonenumber-headline" class="input-headline">Phonenumber</p>
+            <input class="input-item" required="phonenumber-input" type="text" name="phonenumber_name" placeholder="Telefonnumer"></input>
+        </div>
+        
+   
+        <label>
+            <p class="input-headline">CV</p>
+            <p></p>
+            <input name="cv_name"
+            class="button"
+            id="cv-input"
+            onChange={handleFileUpload}
+            multiple="true"
+            type="file"
+            name="image-upload"
+            accept="image/*"
+            />
+        </label>
+
+        <div for="cv-input" id="custom-cv-input" class="custom-input">
+            Datei hochladen
+        </div>
+
+    </div>
+</body>
+</html>
