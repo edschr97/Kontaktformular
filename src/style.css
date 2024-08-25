@@ -8,8 +8,6 @@ html {
 body {
     display: flex;
     flex-direction: row;
- 
-   
 }
 
 #input {
@@ -44,7 +42,8 @@ textarea:focus, select, input:focus{
 }
 
 textarea, select, input {
- 
+    padding: 0px;
+    margin: 0px;
     color: white
 }
 
@@ -53,7 +52,7 @@ textarea, select, input {
 option{
     background-color: rgb(50, 53, 61);
     color: white;
-
+    
 }
 
 
