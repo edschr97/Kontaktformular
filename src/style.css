@@ -1,12 +1,14 @@
 html {
     margin: 0px;
     padding: 0px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 body {
     display: flex;
     flex-direction: row;
+   
 }
 
 #input {
@@ -14,9 +16,12 @@ body {
     height: fit-content;
     width: fit-content;
     margin: 0px;
-    padding: 25px;
-    border-style: solid;
+   
+    padding: 20px 25px 20px 25px;
     border-width: 1px;
+    border-radius: 20px;
+    background-color: rgb(50, 53, 61);
+
 }
 
 input, select{
@@ -30,6 +35,27 @@ input, select{
 
 textarea:focus, select, input:focus{
     outline: none;
+    color: white
+}
+
+textarea, select, input {
+ 
+    color: white
+}
+
+
+
+option{
+    background-color: rgb(50, 53, 61);
+    color: white;
+
+   
+}
+
+select {
+
+    margin: 0px;
+    padding: 0px;
 }
 
 .input-field {
@@ -49,9 +75,10 @@ textarea:focus, select, input:focus{
     margin: 0px;
     padding: 0px;
     padding-bottom: 5px;
-    border-bottom-style: solid;
+    border-bottom-style: none;
     border-bottom-width: 1px;
     border-color: rgb(33, 33, 33);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .input-headline {
@@ -94,4 +121,8 @@ label, p{
     text-align: center;
 
     display: none;
+}
+
+.jobs-input {
+    background-color: grey;
 }
