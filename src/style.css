@@ -8,19 +8,24 @@ html {
 body {
     display: flex;
     flex-direction: row;
+ 
    
 }
 
 #input {
-
     height: fit-content;
     width: fit-content;
     margin: 0px;
    
     padding: 20px 25px 20px 25px;
-    border-width: 1px;
+
     border-radius: 20px;
     background-color: rgb(50, 53, 61);
+
+    box-shadow:
+     
+   
+    0.3em 0.3em 1em rgba(50, 53, 61, .5);
 
 }
 
@@ -49,14 +54,10 @@ option{
     background-color: rgb(50, 53, 61);
     color: white;
 
-   
 }
 
-select {
 
-    margin: 0px;
-    padding: 0px;
-}
+
 
 .input-field {
     border-bottom: 2px;
@@ -125,4 +126,9 @@ label, p{
 
 .jobs-input {
     background-color: grey;
+}
+
+
+.formular {
+  
 }
