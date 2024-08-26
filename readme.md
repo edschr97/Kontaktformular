@@ -1,4 +1,5 @@
 # Three.js Journey
 
 ## Setup
-"Go Live"
+Live Server with Vite
+-> "npm run dev" to run local server

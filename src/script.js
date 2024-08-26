@@ -17,11 +17,11 @@ import { TimelineMax } from 'gsap/gsap-core';
 //Variables 
 
 let lI = document.getElementById("jobs-input").selectedIndex 
-console.log(lI)
+
 
 //console.log(lI)               //last Jobs selcted
 let lV = document.getElementById("jobs-input").children[lI].className
-console.log(lV)
+
 
 const easeOut = "elastic.out(1, 1)"
 const easeIn = "elastic.in(1, 1)"
@@ -613,7 +613,7 @@ function createAssets() {
     oConfigNew(15, gM, gML, aL, true, true, [0, 0, 0], [0, 0, 0], 1.25)
     gConfig(gM, [1.25, 1.25, 0], [0, -90, 0], 0)
     scene.add(gM)
-    console.log(gM.children)
+    
     gM.children[1].material = cMat
 
 
