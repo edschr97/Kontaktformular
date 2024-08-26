@@ -644,7 +644,9 @@ function createAssets() {
 
     oConfigNew(16, gMa, gMaL, aL, true, true, [0, 0, 0], [0, 0, 0], 1)
     gConfig(gMa, [1, 0, 0.5], [0, -90, 0], 5)
+    gMa.name = "mouse"
     scene.add(gMa)
+    
 
     jobs.every(element  => {
         if(element.includes(lV)) {
@@ -655,7 +657,7 @@ function createAssets() {
         } 
         return true
     })
-
+    
 
 }
 
@@ -968,7 +970,6 @@ function mapMousePos(rangeX1, rangeX2, rangeY1, rangeY2) {
 
 }
 
-
 window.addEventListener('mousemove', onMouseMove, false);
 
 function onMouseMove(event) {
@@ -977,6 +978,14 @@ function onMouseMove(event) {
     mouseY = event.clientY;
     //console.log(mouseX)
     //console.log(mouseX, mouseY);
+    if(assetLoaded) {
+        const p = mapMousePos(0.9, 1.15, 0.25, 0.5)
+        const m = scene.getObjectByName("mouse").position
+    
+        m.x = p[0]
+        m.z = p[1]
+    }
+   
 
 }
 
@@ -1112,3 +1121,5 @@ document.getElementById('cv-input').addEventListener('change', function() {
     const fileName = this.files.length ? this.files[0].name : "Keine Datei ausgewählt";
     document.getElementById('file-name-display').textContent = fileName;
 });
+
+
