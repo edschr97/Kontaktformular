@@ -979,7 +979,7 @@ function onMouseMove(event) {
     //console.log(mouseX)
     //console.log(mouseX, mouseY);
     if(assetLoaded) {
-        const p = mapMousePos(0.9, 1.15, 0.25, 0.5)
+        const p = mapMousePos(0.9, 1.15, 0.45, 0.7)
         const m = scene.getObjectByName("mouse").position
     
         m.x = p[0]
