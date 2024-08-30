@@ -1,4 +1,4 @@
-# Three.js Journey
+
 
 ## Setup
 Live Server with Vite
