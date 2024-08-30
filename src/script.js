@@ -93,8 +93,8 @@ directionalLightCameraHelper.visible = false
  * Sizes
  */
 const sizes = {
-    width: 600,
-    height: 600
+    width: 800,
+    height: 800
 }
 
 

@@ -8,6 +8,7 @@ html {
 body {
     display: flex;
     flex-direction: row;
+    padding:100px;
 }
 
 #input {
