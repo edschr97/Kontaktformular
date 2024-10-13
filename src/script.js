@@ -230,7 +230,7 @@ let assetLoadState = 0;
 //Teller
 let teller
 gltfLoader.load(
-    '/models/Donut/Teller.gltf',
+    './static/models/Donut/Teller.gltf',
     (gltf) =>
     {
         aL[2] = gltf.scene.children[0].geometry
@@ -239,52 +239,52 @@ gltfLoader.load(
 )
 
 //Tastatur 
-loadGlft(0, aL, '/models/Tastatur.gltf')
+loadGlft(0, aL, './static/models/Tastatur.gltf')
 
 //Donut 
-loadGlft(1, aL, '/models/Donut/Donut.gltf')
+loadGlft(1, aL, './static/models/Donut/Donut.gltf')
 
 //Bildschirm
-loadGlft(3, aL, '/models/Bildschirm/Bildschirm.gltf')
+loadGlft(3, aL, './static/models/Bildschirm/Bildschirm.gltf')
     
 //Umschlag
-loadGlft(4, aL, "/models/Folder.gltf")
+loadGlft(4, aL, "./static/models/Folder.gltf")
 
 //Pflanze
-loadGlft(5, aL, "/models/Pflanze.gltf")
+loadGlft(5, aL, "./static/models/Pflanze.gltf")
 
 //Stifte
-loadGlft(6, aL, "/models/Stifte.gltf")
+loadGlft(6, aL, "./static/models/Stifte.gltf")
 
 //Puzzel
-loadGlft(7, aL, "/models/Puzzel.gltf")
+loadGlft(7, aL, "./static/models/Puzzel.gltf")
 
 //Design
-loadGlft(8, aL, "/models/Design.gltf")
+loadGlft(8, aL, "./static/models/Design.gltf")
 
 //Techi
-loadGlft(9, aL, '/models/Techi.gltf')
+loadGlft(9, aL, './static/models/Techi.gltf')
 
 //Marketing
-loadGlft(10, aL, "/models/Marketing.gltf")
+loadGlft(10, aL, "./static/models/Marketing.gltf")
 
 //IT
-loadGlft(11, aL, "/models/IT.gltf")
+loadGlft(11, aL, "./static/models/IT.gltf")
 
 //Sales
-loadGlft(12, aL, "/models/Sales.gltf")
+loadGlft(12, aL, "./static/models/Sales.gltf")
 
 //Kontaktbuch
-loadGlft(13, aL, "/models/Kontaktbuch.gltf")
+loadGlft(13, aL, "./static/models/Kontaktbuch.gltf")
 
 //Name
-loadGlft(14, aL, "/models/Name.gltf")
+loadGlft(14, aL, "./static/models/Name.gltf")
 
 //Mail
-loadGlft(15, aL, "/models/Mail.gltf")
+loadGlft(15, aL, "./static/models/Mail.gltf")
 
 //Maus
-loadGlft(16, aL, "/models/Maus.gltf")
+loadGlft(16, aL, "./static/models/Maus.gltf")
 
 
 
@@ -300,7 +300,7 @@ const maxLetters = 10
 
 
 fontLoader.load(
-    'fonts/neusa-next-medium.typeface.json',
+    './static/fonts/neusa-next-medium.typeface.json',
     (font) => {
         fontData = font
         tNM = new TextGeometry(
